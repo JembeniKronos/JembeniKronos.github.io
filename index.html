@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel Mikić Portfolio</title>
+  <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <a href="index.html"> <img src="logo2.png" alt="GM Logo" class="logo-img" /> </a> </div>
+    <nav id="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About me</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills and Tools</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="text">
+        <h2>Introduction</h2>
+        <p>My name is Gabriel Mikić, a student at the Faculty of Informatics and Digital Technologies and a co-founder of the MoveUs app. In my free time I make projects in different programs such as Figma and Blender. My passion is data science using various database programs and data centered languages like R.</p>
+      </div>
+      <div class="image">
+       <a href="about.html"> <img src="presentation.png" alt="Gabriel presenting a project" /></a>
+      </div>
+    </section>
+
+    <section class="works">
+      <h2>Works</h2>
+      <div class="centered-row">
+         <a href="project_switch.html"> <img src="switch1.png" alt="Nintendo Switch Project" /> </a>
+         <a href="project_mf.html"> <img src="motimate.png" alt="Mobile App UI" /> </a>
+         <a href="project_penguin.html"> <img src="penguin.png" alt="Penguin Blender Art" /> </a>
+      </div>
+      <a href="projects.html"> <button class="library-btn">Library</button> </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+
+    <div class="contact">
+      <p>Contact:<br>
+      gabriel.mikic777@gmail.com<br>
+      gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
