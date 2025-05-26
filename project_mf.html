@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoveUs Feed - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>MoveUs Feed design</h2>
+      <div class="description-block">
+  <p>
+    During the creation of our application MoveUs we found the need to create a UI design that we can rely on while the app was in development. While the Figma prototype features many different screens
+	and options the feed is one of the main parts of the application as it allows the user to search the events that have been recommended to him via the algorithm.
+  </p>
+  <br>
+  <img src="motimate.png" alt="Figma feed UI" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+    The feed screen features many different events that the user can select and is brought to the event information page. In the said page the user can view the details regarding the selected event, 
+	while in Figma the prototype only allows viewing of only one event as a placeholder instead of showing a different screen for every event. <br>The user can view participants and organizers of the event, it 
+	is also worth mentioning that the design has already undergone certain changes and ideas have been refined so the screens may differ in the final version of the product.
+  </p>
+  <br>
+  <img src="event.png" alt="Event information UI" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

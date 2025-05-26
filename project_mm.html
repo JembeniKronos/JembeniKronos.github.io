@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoveUs Map - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>MoveUs Map design</h2>
+      <div class="description-block">
+  <p>
+    During the creation of our application MoveUs we found the need to create a UI design that we can rely on while the app was in development. While the Figma prototype features many different screens
+	and options the map option is significat as it allows the user to view nearby events on an interactive map based on their location.
+  </p>
+  <br>
+  <img src="motimap.png" alt="Figma Map UI" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+    The map screen consists of the main map of the area that the user is currently in and via the pointers shows what areas feature an event soon. The user can scroll through
+	the map as they choose as it will have an integrated map API. This option is not available in the Figma prototype as Figma offers only a certain amount of features to the user for free,
+	however the user can select a point on the map that features an event and can see the event preview. <br> Said features and UI can change based on the collective opinion of the team.
+  </p>
+  <br>
+  <img src="map.png" alt="Figma Map - Event selected" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

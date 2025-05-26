@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2D animation - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>Football rules - 2D animation</h2>
+      <div class="description-block">
+  <p>
+   During the course of Computer Animation we participated in a group project with a purpouse of making a 2D animation video using Blender. My teammate and I made a video about the rules of cards in football,
+   the animation is short and simple using svg models as well as 3D blender models for the intro and outro of the animation. 
+  </p>
+  <br>
+  <img src="video2.png" alt="Intro frame" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+    The animation parts are made seperately and merged inside Adobe Premiere Pro, which also served as the means to record the voiceover for the video. As I had previous experience in this program the process was simple 
+	and short, the biggest obstacle was the animation itself as Blender is not an optimized program for animating such as Illustrator or similar programs, while it does have the benefit of being able to work in a 3D environment 
+	it's drawbacks significantlly outweigh it's advantages.
+  </p>
+  <br>
+  <img src="video1.png" alt="Intro frame 2" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

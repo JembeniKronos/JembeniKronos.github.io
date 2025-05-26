@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Gabriel Mikić</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+     <div class="logo">
+  <a href="index.html"> <img src="logo2.png" alt="GM Logo" class="logo-img" /> </a> </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="about-container">
+      <div class="about-left">
+        <img src="presentation.png" alt="Gabriel Mikić presenting" class="profile-img" />
+        <div class="bio">
+          <h3>About me:</h3>
+          <p>My name is Gabriel Mikić, a student at the Faculty of Informatics and Digital Technologies and a co-founder of the MoveUs app.</p>
+          <p>In my free time I make projects in different programs such as Figma and Blender. My passion is data science using various database programs and data centered languages like R.</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="project">
+          <a href="project_switch.html"><img src="switch1.png" alt="Nintendo Switch Re-model" /></a>
+          <div class="project-desc">
+            <h4>Nintendo switch re-model</h4>
+            <p>During the Computer Graphics course I have learned how to make realistic models of average household items using the Blender program. This model features a Nintendo switch and uses many different tools and textures.</p>
+          </div>
+        </div>
+        <div class="project">
+          <a href="project_mf.html"> <img src="motimate.png" alt="MoveUs UI Design" /> </a>
+          <div class="project-desc">
+            <h4>MoveUs UI design</h4>
+            <p>While developing the MoveUs app I took on the task of making a basic UI design for the app. The design was made using Figma and features a fully functioning prototype. The prototype was also used to conduct a survey to measure the user satisfaction and user experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

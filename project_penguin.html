@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blender penguin model - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>Low-poly penguin model</h2>
+      <div class="description-block">
+  <p>
+    During the Computer Graphics course one of our tasks was to create a low polygon model of an animal of our choice. While the innitial animal was different 
+	in the end I chose to create a model of a penguin. While being far from perfect the model can be recognized as a penguin and therefore can be used as a model in a game or similar media.
+  </p>
+  <br>
+  <img src="penguin.png" alt="Penguin model overview" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+    Most of the model was created using the extrude option, as well as different modifiers most notable being the mirror modifier, which allowed for easy copying of one side to the other.
+	The reference picture shows the penguin in movement but I decided it would be easier to make the model static as it allowed the legs to be created via the mirror modifier.
+  </p>
+  <br>
+  <img src="penguin2.png" alt="Penguin front view" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

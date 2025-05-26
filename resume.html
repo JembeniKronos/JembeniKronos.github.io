@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume - Gabriel Mikić</title>
+  <link rel="stylesheet" href="resume.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html" class="active">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="resume-container">
+      <div class="resume-left">
+        <h3>Summary</h3>
+        <p>
+          My name is Gabriel Mikić, a student at the Faculty of Informatics and Digital Technologies and a co-founder of the MoveUs app.
+          In my free time I make projects in different programs such as Figma and Blender. <br><br> My passion is data science using various
+          database programs and data centered languages like R.<br><br>
+          I have presented my work on using networks in sport recommendations on MIPRO and have attended many lectures on said topics.
+        </p>
+
+        <h4>Notable information</h4>
+        <p>
+          <strong>City:</strong> Rijeka<br>
+          <strong>Job:</strong> Student<br>
+          <strong>Email:</strong> gabriel.mikic777@gmail.com<br>
+          <strong>Languages:</strong> Croatian, English
+        </p>
+
+        <h4>Download full version:</h4>
+        <a href="ZivotopisGM.docx" download class="resume-link">Download Resume</a>
+      </div>
+
+      <div class="resume-right">
+        <img src="resume.png" alt="Resume screenshot" />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

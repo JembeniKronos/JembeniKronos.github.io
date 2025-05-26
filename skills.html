@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills and Tools - Gabriel Mikić</title>
+  <link rel="stylesheet" href="skills.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+  <a href="index.html"> <img src="logo2.png" alt="GM Logo" class="logo-img" /> </a> </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="video1.png" alt="Video editing thumbnail" />
+        <div class="skill-text">
+          <h3>Video editing</h3>
+		  <br>
+          <p>During many different courses as well as the knowledge I gained during previous education I have developed a skill set for video editing.<br>
+          The videos range from 2D animations to real-life videos and different tools such as drones for aerial shots.<br><br>
+          <strong>Tools used:</strong> Adobe Premiere Pro, Blender, Kdenlive</p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <img src="motimate.png" alt="MoveUs UI design" />
+        <div class="skill-text">
+          <h3>UI/UX design</h3>
+		  <br>
+          <p>During my time in academic studies on the Faculty of Informatics and Digital Technologies I attended many courses on UI design.<br>
+          While my skills are far from perfect I managed to improve in contrast to the skills I had before enrolling.<br>
+          My UI design examples can be seen in the MoveUs prototype as well as this site.<br><br>
+          <strong>Tools used:</strong> Figma, Canva, Wordpress</p>
+        </div>
+      </div>
+
+      <div class="skill">
+        <img src="switch1.png" alt="3D Modeling" />
+        <div class="skill-text">
+          <h3>Modeling</h3>
+		  <br>
+          <p>Most of my modeling experience also comes from my time at University where we learned and honed our skills in different modeling programs.<br>
+          While I had knowledge from before as I have designed some 3D models for my high school to test out the work of a 3D printer.<br>
+		  <br>
+          <strong>Tools used:</strong> Blender, CAD tools, WebGL</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

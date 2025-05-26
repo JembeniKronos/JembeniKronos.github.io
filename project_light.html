@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Light testing project - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>Light testing</h2>
+      <div class="description-block">
+  <p>
+    During the Computer Graphics course one of our tasks was to design a model featuring metalic or objects of similar reflective surface to test out the rendering properties of light inside of Blender.
+	In this project I decided to test it on 3 balls of different colors and roughness that allowed for different shines of light on different objects.
+  </p>
+  <br>
+  <img src="balls.png" alt="Light testing project - no shining object" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+    The models and textures are simple and are using the basics of Blender as we have only started to learn inside the program. The project contains a shining object as well as a background light
+	that both have different effects on the reflective objects. 
+  </p>
+  <br>
+  <img src="ball2.png" alt="Light testing project - shining object" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

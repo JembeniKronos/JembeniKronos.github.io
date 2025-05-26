@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drone recording - Gabriel Mikić</title>
+  <link rel="stylesheet" href="project_switch.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo2.png" alt="GM Logo" class="logo-img" />
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="project-detail-container">
+      <h2>Drone recording</h2>
+      <div class="description-block">
+  <p>
+   For my final project in high school I decided to make a promotional video for the school, during my time recording material for the video I was given multiple drones to test and freely use for my recording footage.
+   While the first drone wasn't able to function properly the second drone was a success but only after downloading the app for the model. While the process of installing the app and connecting it to the drone was complicated the recording 
+   was rather simple.
+  </p>
+  <br>
+  <img src="school.png" alt="Aerial view of the school" />
+</div>
+
+<div class="description-block">
+  <br>
+  <p>
+	I tested the drones range as well as the quality of their footage, which was severely lacking. The drones while promising 4k quality resolution were only able to provide 720p footage at best and 144p at worst.
+	Regardless the experience was remarkable and fun, and the provided footage was unique and added a certain level of professionalism into the project.
+  </p>
+  <br>
+  <img src="drone.png" alt="A different view from the drone" />
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

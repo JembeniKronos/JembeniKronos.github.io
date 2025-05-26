@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(to right, #0b2c4d, #3390ff);
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav#nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+}
+
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f4f6fa;
+}
+
+.project-section {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.project-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-section img:hover {
+  transform: scale(1.03);
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .project-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.project-gallery img {
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #0b2c4d;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav#nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #0b2c4d;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+  }
+
+  nav#nav-links.open {
+    display: flex;
+  }
+
+  nav#nav-links a {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .project-gallery {
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}

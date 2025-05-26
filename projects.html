@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Gabriel Mikić</title>
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+  <a href="index.html"> <img src="logo2.png" alt="GM Logo" class="logo-img" /> </a> </div>
+
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills and Tools</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-section">
+      <h2>Figma projects</h2>
+      <div class="project-gallery">
+        <a href="project_mf.html"> <img src="motimate.png" alt="MoveUs UI 1" /> </a>
+        <a href="project_mm.html"><img src="motimap.png" alt="MoveUs UI 2" /> </a>
+        <a href="project_mt.html"><img src="motasks.png" alt="MoveUs UI 3" /> </a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Blender projects</h2>
+      <div class="project-gallery">
+        <a href="project_light.html"> <img src="balls.png" alt="Blender project" /> </a>
+        <a href="project_penguin.html"> <img src="penguin.png" alt="Penguin model" /> </a>
+        <a href="project_switch.html"> <img src="switch1.png" alt="Nintendo Switch model" /> </a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <h2>Other projects</h2>
+      <div class="project-gallery">
+         <a href="project_video.html"><img src="video2.png" alt="Video project" /> </a>
+         <a href="project_print.html"><img src="print.png" alt="3D printing project" /> </a>
+         <a href="project_drone.html"><img src="school.png" alt="Drone photo" /> </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="socials">
+  <a href="https://mail.google.com" target="_blank">
+    <img src="mail.png" alt="Gmail" class="social-icon" />
+  </a>
+  <a href="https://twitter.com" target="_blank">
+    <img src="x.png" alt="X (Twitter)" class="social-icon" />
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <img src="ig.png" alt="Instagram" class="social-icon" />
+  </a>
+</div>
+    <div class="contact">
+      <p>Contact:</p>
+      <p>gabriel.mikic777@gmail.com</p>
+      <p>gabriel.mikic@uniri.hr</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
